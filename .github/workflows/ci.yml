@@ -83,5 +83,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: Purpur-${{ matrix.java }}
-        path: yatopia-1.16.5-yatoclip.jar
+        path: ./Purpur-Server/build/libs/*.jar
       
