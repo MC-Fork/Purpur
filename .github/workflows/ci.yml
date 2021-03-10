@@ -62,7 +62,6 @@ jobs:
     - name: Remove Useless Patch
       run: |
         rm -rvf ./Paper/Spigot-Server-Patches/*-Fix-sand-duping.patch
-        rm -rvf ./Paper/Spigot-Server-Patches/*-Block-Enderpearl-Travel-Exploit.patch
         
     - name: Apply Patches
       run: |
