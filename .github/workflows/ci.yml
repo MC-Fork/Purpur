@@ -59,9 +59,10 @@ jobs:
         path: Paper/work/Minecraft/${{ steps.mcver.outputs.mcver }}
         key: ${{ steps.mcver.outputs.mcver }}-${{ runner.os }}-java-${{ matrix.java }}-minecraft-decomp
     
-    - name: Remove Sand Duping Patch
+    - name: Remove Useless Patch
       run: |
         rm -rvf ./Paper/Spigot-Server-Patches/*-Fix-sand-duping.patch
+        rm -rvf ./Paper/Spigot-Server-Patches/*-Block-Enderpearl-Travel-Exploit.patch
         
     - name: Apply Patches
       run: |
